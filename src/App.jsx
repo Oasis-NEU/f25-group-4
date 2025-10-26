@@ -2,6 +2,7 @@
 import { Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import ProfilePage from "./pages/Profile";
+import CalendarPage from "./pages/Calendar"
 import "./App.css";
 
 function Home() {
@@ -16,6 +17,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/calendar" element={<CalendarPage />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>
