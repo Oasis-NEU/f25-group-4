@@ -1,5 +1,9 @@
 import { createContext, useContext, useEffect, useState } from "react";
-
+import { Routes, Route } from "react-router-dom";
+import Sidebar from "./components/Sidebar";
+import ProfilePage from "./pages/Profile";
+import CalendarPage from "./pages/Calendar"
+import "./App.css";
 const AuthCtx = createContext(null);
 export const useAuth = () => useContext(AuthCtx);
 
@@ -201,3 +205,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
   </AuthProvider>
 );
+
