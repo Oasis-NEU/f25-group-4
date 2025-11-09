@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import ProfilePage from "./pages/Profile";
 import CalendarPage from "./pages/Calendar"
+import MenuPage from "./pages/menu";
 import "./App.css";
 
 function Home() {
@@ -18,9 +19,11 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/calendar" element={<CalendarPage />} />
+          <Route path="/menu" element={<MenuPage />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>
     </div>
   );
 }
+
